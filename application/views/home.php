@@ -1,7 +1,7 @@
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4 muncul">Selamat Datang di<br> Aplikasi <span>Sistem Pakar</span> Diagnosa Penyakit <span>ISPA</span></h1>
+    <h1 class="display-4 muncul">Selamat Datang di<br> Aplikasi <span>Sistem Pakar</span> Prediksi Dini Penyakit <span>ISPA</span></h1>
     <a href="#konsultasi" class="btn btn-success tombol">Konsultasi</a>
   </div>
 </div>
