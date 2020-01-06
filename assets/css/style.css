@@ -1,0 +1,688 @@
+html, body {
+	scroll-behavior: smooth; 
+} 
+
+/* Jumbotron */
+
+.jumbotron {
+	background-image: url("../../assets/img/14019.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 540px;
+	text-align: center;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.jumbotron .container {
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4 {
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	font-size: 38px;
+	margin-bottom: 30px;
+	
+}
+
+
+.jumbotron .display-4 span {
+	font-weight: 500;
+}
+
+/* Navbar */
+
+.navbar {
+	background-color: transparent;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-brand {
+	font-family: "Viga";
+	font-size: 28px;
+}
+
+/* panel */
+
+.info-panel {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	margin-top: -100px;
+	background-color: white;
+	padding: 30px;
+}
+
+.info-panel img {
+	width: 80px;
+	height: 80px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.info-panel h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.info-panel p {
+	font-size: 14px;
+	color: #acacac;
+	margin-top: -5px;
+	font-weight: 200;
+}
+
+/* Tentang ISPA */
+
+.tentang {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+.tentang .card{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.tentang .card.muncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.tentang h1 {
+	text-align: center;
+	color: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.tentang h4 {
+	text-align: center;
+	color: #fff;
+}
+
+.tentang hr {
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+.card1 {
+	border: 2px solid transparent;
+	border-image: linear-gradient(to right, #2c3e50 0%, #4ca1af 80%);
+	border-radius: 0px 30px 0px 30px;
+}
+
+.card2 {
+	background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.card3 {
+	background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+	margin-left: 100px;
+	margin-right: 100px;
+	color: black;
+	border-radius: 40px;
+	padding: 20px 0px 20px 0px;
+}
+
+#custom_carousel .item {
+	color: #000;
+	background-color: #eee;
+	padding: 20px 0;
+}
+
+#custom_carousel .controls {
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	text-align: center;
+	position: relative;
+	background: #ddd;
+}
+
+#custom_carousel .controls li {
+	display: table-cell;
+	width: 1%;
+	max-width: 90px;
+}
+
+#custom_carousel .controls li.active {
+	background-color: #eee;
+	border-top: 3px solid orange;
+}
+
+#custom_carousel .controls a small {
+	overflow: hidden;
+	display: block;
+	font-size: 10px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/* Jumbotron 2 */
+
+.jumbotron-2 {
+	background-image: url("../../assets/img/14019.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 440px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron-2 .container {
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron-2::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4-2 {
+	color: white;
+	margin-top: 5px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4-2 span {
+	font-weight: 500;
+}
+
+.konsul {
+	background-color: white;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.stretch-card {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	-webkit-justify-content: stretch;
+	justify-content: stretch;
+}
+
+/* ABOUT */
+
+.about h6 {
+	margin-bottom: 40px;
+}
+
+/* Back to top */
+
+.ignielToTop {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 99;
+	cursor: pointer;
+	border-radius: 100px;
+	transition: all 0.5s;
+	background: #2c3e50 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.ignielToTop:hover {
+	background: #1d2129 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		width: auto;
+		max-width: 100%;
+		margin: 0px;
+	}
+}
+
+/* ----------------------------------------------------BATAS HALAMAN HOME--------------------------------------------- */
+
+/* Panel konsultasi */
+
+.panel-konsul {
+	margin-top: -130px;
+	margin-bottom: 50px;
+}
+
+.panel-konsul .card-header {
+	color: white;
+	text-transform: uppercase;
+}
+
+#logo-konsul {
+	visibility: hidden;
+}
+
+.card-konsul {
+	margin-top: -280px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 80px;
+	border-radius: 30px;
+}
+
+/* ----------------------------------------------------BATAS HALAMAN KONSULTASI--------------------------------------------- */
+
+/* Login */
+
+.login {
+	background-image: url("../../assets/img/14019.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 150px 30px 0px 30px;
+	padding: 50px 80px 60px 80px;
+	border-radius: 30px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login h1 {
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.login button:hover {
+	color: white;
+}
+
+/* ----------------------------------------------------BATAS HALAMAN LOGIN--------------------------------------------- */
+
+/* DASHBOARD */
+
+.main-konten {
+	background-color: #fff;
+	padding: 40px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+
+/* ----------------------------------------------------BATAS HALAMAN DASHBOARD--------------------------------------------- */
+
+/* -------------------------Utility---------------------------------- */
+
+.tombol {
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+/* Checkbox */
+
+/*
+=====
+LEVEL 1. CORE STYLES
+=====
+*/
+
+.toggle {
+	--uiToggleSize: var(--toggleSize, 20px);
+	--uiToggleIndent: var(--toggleIndent, 0.4em);
+	--uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+	--uiToggleColor: var(--toggleColor, #000);
+	--uiToggleDisabledColor: var(--toggleDisabledColor, #868e96);
+	--uiToggleBgColor: var(--toggleBgColor, #fff);
+	--uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+	--uiToggleArrowColor: var(--toggleArrowColor, #fff);
+	display: inline-block;
+	position: relative;
+}
+
+.toggle__input {
+	position: absolute;
+	left: -99999px;
+}
+
+.toggle__label {
+	display: inline-flex;
+	cursor: pointer;
+	min-height: var(--uiToggleSize);
+	padding-left: calc(var(--uiToggleSize) + var(--uiToggleIndent));
+}
+
+.toggle__label:before, .toggle__label:after {
+	content: "";
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	font-size: var(--uiToggleSize);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.toggle__label:before {
+	border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+	z-index: 2;
+}
+
+.toggle__input:disabled~.toggle__label:before {
+	border-color: var(--uiToggleDisabledColor);
+}
+
+.toggle__input:focus~.toggle__label:before {
+	box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+}
+
+.toggle__input:not(:disabled):checked:focus~.toggle__label:after {
+	box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+}
+
+.toggle__input:not(:disabled)~.toggle__label:after {
+	background-color: var(--uiToggleColor);
+	opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label:after {
+	opacity: 1;
+}
+
+.toggle__text {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+/*
+  The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+  */
+
+.toggle__text:before {
+	content: "";
+	box-sizing: border-box;
+	width: 0;
+	height: 0;
+	font-size: var(--uiToggleSize);
+	border-left-width: 0;
+	border-bottom-width: 0;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-color: var(--uiToggleArrowColor);
+	position: absolute;
+	top: 0.44em;
+	left: 0.1em;
+	z-index: 3;
+	transform-origin: left top;
+	transform: rotate(-40deg) skew(10deg);
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label .toggle__text:before {
+	width: 0.6em;
+	height: 0.3em;
+	border-left-width: var(--uiToggleArrowWidth);
+	border-bottom-width: var(--uiToggleArrowWidth);
+	will-change: width, height;
+	transition: width 0.1s ease-out 0.2s, height 0.2s ease-out;
+}
+
+/*
+  =====
+  LEVEL 2. PRESENTATION STYLES
+  =====
+  */
+
+/* 
+  The demo skin
+  */
+
+.toggle__label:before, .toggle__label:after {
+	border-radius: 2px;
+}
+
+/* 
+  The animation of switching states
+  */
+
+.toggle__input:not(:disabled)~.toggle__label:before, .toggle__input:not(:disabled)~.toggle__label:after {
+	opacity: 1;
+	transform-origin: center center;
+	will-change: transform;
+	transition: transform 0.2s ease-out;
+}
+
+.toggle__input:not(:disabled)~.toggle__label:before {
+	transform: rotateY(0deg);
+	transition-delay: 0.2s;
+}
+
+.toggle__input:not(:disabled)~.toggle__label:after {
+	transform: rotateY(90deg);
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label:before {
+	transform: rotateY(-90deg);
+	transition-delay: 0s;
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label:after {
+	transform: rotateY(0deg);
+	transition-delay: 0.2s;
+}
+
+.toggle__text:before {
+	opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label .toggle__text:before {
+	opacity: 1;
+	transition: opacity 0.1s ease-out 0.3s, width 0.1s ease-out 0.5s, height 0.2s ease-out 0.3s;
+}
+
+/*
+  =====
+  LEVEL 3. SETTINGS
+  =====
+  */
+
+.toggle {
+	--toggleColor: #0640ac;
+	--toggleBgColor: #314ffc;
+	--toggleSize: 25px;
+}
+
+/*
+  =====
+  DEMO
+  =====
+  */
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+}
+
+.page {
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	order: 1;
+}
+
+.page__toggle {
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.page__toggle:nth-child(n+2) {
+	margin-top: 50px;
+}
+
+/* ----------------------Akhir Utility-------------------------------- */
+
+/* ---------------------------------------------FOOTER------------------------------------------------- */
+
+/* Footer */
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#footer {
+	margin-top: 50px;
+}
+
+section {
+	padding: 60px 0;
+}
+
+section .section-title {
+	text-align: center;
+	color: linear-gradient(to right, #2c3e50, #4ca1af);
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+#footer {
+	background: linear-gradient(to right, #2c3e50, #4ca1af) !important;
+}
+
+#footer h5 {
+	padding-left: 10px;
+	border-left: 3px solid #eeeeee;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+#footer a {
+	color: #ffffff;
+	text-decoration: none !important;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+	padding: 3px 0;
+}
+
+#footer ul.social li a i {
+	margin-right: 5px;
+	font-size: 25px;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+#footer ul.social li:hover a i {
+	font-size: 30px;
+	margin-top: -10px;
+}
+
+#footer ul.social li a, #footer ul.quick-links li a {
+	color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+	color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+	padding: 3px 0;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+	padding: 3px 0;
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+	margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+	font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	#footer h5 {
+		padding-left: 0;
+		border-left: transparent;
+		padding-bottom: 0px;
+		margin-bottom: 10px;
+	}
+}
+
+/* -----------------------------------------AKHIR FOOTER----------------------------------------------- */
+
+/* Desktop Version */
+
+@media (min-width: 992px) {
+	.navbar-brand, .nav-link {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid white;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -75px;
+		height: 640px;
+		background-attachment: fixed;
+	}
+	.jumbotron-2 {
+		margin-top: -75px;
+		height: 540px;
+	}
+	.jumbotron .display-4 {
+		font-size: 58px;
+	}
+	.jumbotron .display-4-2 {
+		font-size: 38px;
+	}
+	.login {
+		margin: 150px 400px 0px 400px;
+	}
+	.card-konsul {
+		margin-top: 20px;
+		border-radius: 30px;
+	}
+	#logo-konsul {
+		visibility: unset;
+	}
+}
+
+/* @media (min-width: 768px) {
+	#logo-konsul {
+		visibility: hidden;
+	}
+	
+} */
